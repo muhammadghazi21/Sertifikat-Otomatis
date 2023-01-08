@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Info Penggunaan App</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        background-color: rgb(247, 247, 247);
+        margin: 0;
+      }
+      header {
+        background-color: rgb(255, 255, 255);
+        color: #333;
+        padding: 1rem;
+      }
+      header h1 {
+        font-size: 2rem;
+        margin: 0;
+      }
+      section {
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        margin: 1rem 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 1rem 1.5rem;
+      }
+      section h2 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+      section p {
+        margin: o 0 1rem 0;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      p {
+        text-align: justify;
+      }
+      #ssImg {
+        width: 100%;
+      }
+      hr {
+        height: 5px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Info Penggunaan App</h1>
+      </header>
+      <section>
+        <p>
+          Dalam halaman ini, akan tertulis secara detail cara penggunaan aplikasi generate sertifikat secara otomatis ini. Mulai dari set up email pengirim, pengaturan template sertifikat, pengaturan data peserta, dan pengisian setiap form
+          yang muncul saat penggunaan aplikasi ini. Sebelumnya kali ucapkan terimakasih kepada pembimbing kami, Bapak Nurkhamid, S.Si., M.Kom., Ph.D. yang telah memberikan bimbingan dan arahan kepada kami dalam pembuatan aplikasi ini.
+          Semoga Beliau dan keluarga diberikan kesehatan dan keberkahan.
+        </p>
+        <br />
+        <p>Berikut adalah langkah-langkah penggunaan aplikasi ini, simak setiap instruksi yang kami berikan dengan seksama.</p>
+      </section>
+      <section>
+        <h2>Set Up Email</h2>
+        <hr />
+        <p>
+          Untuk menggunakan aplikasi ini, Anda harus memiliki akun email yang akan digunakan sebagai pengirim email. Jika Anda belum memiliki akun email, silahkan buat akun email terlebih dahulu atau memakai akun email yang sudah ada.
+          Setelah memiliki akun email, Anda harus buka pada manajemen akun email seperti gambar berikut.
+        </p>
+        <img id="ssImg" src="assets/setUp email (1).png" alt="set up email (1)" />
+
+        <p>Setelah itu, Anda harus mengaktifkan akses aplikasi pihak ketiga dengan masuk menu "Security" seperti gambar berikut.</p>
+        <img id="ssImg" src="assets/setUp email (2).png" alt="set up email (2)" />
+
+        <p>Cari sub menu bernama "Sign in to Google" dan pencet menu "App Passwords" seperti gambar berikut.</p>
+        <img id="ssImg" src="assets/setUp email (2) - Copy.png" alt="setUp email (2) - Copy" />
+
+        <p>
+          Pada menu "App Passwords", Anda harus memilih "Select the app and device you want to generate the app password for" dan memilih "Other (Custom name)" pada menu "Select app" dan "Computer" pada menu "Select device". Kemudian
+          masukkan nama aplikasi yang Anda inginkan (Saya memberinya nama "PythonApp") pada menu "Enter the custom name" dan pencet tombol "Generate".
+        </p>
+        <img id="ssImg" src="assets/setUp email (3).png" alt="set up email (3)" />
+        <img id="ssImg" src="assets/setUp email (4).png" alt="set up email (4)" />
+
+        <p>
+          Setelah itu, akan muncul password yang akan digunakan untuk mengakses akun email Anda. Password tersebut akan digunakan untuk pengiriman email pada aplikasi ini. Jangan lupa untuk menyimpan password tersebut karena akan digunakan
+          untuk mengakses akun email Anda.
+        </p>
+        <img id="ssImg" src="assets/setUp email (5).png" alt="set up email (5)" />
+        <p>Set up akun email Anda selesai. Berikutnya kita set up data peserta pada excel.</p>
+      </section>
+
+      <section>
+        <h2>Set Up Data pada excel</h2>
+        <hr />
+        <p>
+          Untuk menggunakan aplikasi ini, Anda harus memiliki data peserta dalam bentuk excel. Data peserta harus berisi nama peserta, peran peserta, dan email peserta. Data peserta harus berada pada sheet pertama pada excel dan dengan
+          penamaan yang berurutan. Berikut adalah contoh data peserta yang benar.
+        </p>
+        <img id="ssImg" src="assets/setUp excel.png" alt="set up excel (1)" />
+      </section>
+
+      <section>
+        <h2>Set Up Template</h2>
+        <hr />
+        <p>
+          Setelah itu, Anda harus membuat template sertifikat yang akan digunakan pada setiap sertifikat yang dicetak. Template sertifikat harus berupa file word dengan format .docx. Walaupun begitu template dapat berupa gambar didalam .doc
+          akan tetapi komponen utama yang harus ada adalah format tempat pengisian nama dan peran peserta yang berbentuk "{{ Nama }}" dan "{{ Sebagai }}". Berikut adalah contoh template sertifikat yang benar.
+        </p>
+        <img id="ssImg" src="assets/setUp template.png" alt="set up template (1)" />
+
+        <p>Pastikan kedua file diatas tidak dalam keadaan terkunci atau protected sehingga program tidak mampu mengolahnya.</p>
+
+        <button id="btnDone" onclick="alert('Selamat, Anda sudah siap menggunakan aplikasi ini!')">Selesai</button>
+      </section>
+
+      <section>
+        <p>
+          Setelah Tiga tahapan diatas dilakukan, Anda sudah dapat menggunakan aplikasi ini. Untuk menggunakan aplikasi ini, Anda harus menjalankan file "generate-sertifikat.py" pada folder "src". Setelah itu, Anda akan diarahkan untuk
+          melalui menu dan pengisian semua komponen yang anda miliki sendiri (.xlsx, .docx, dan password email).
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
